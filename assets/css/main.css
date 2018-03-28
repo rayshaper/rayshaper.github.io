@@ -4102,7 +4102,6 @@
 	}
 
 		#banner > .content {
-			background-color: #3dc5ad;
 			color: #ffffff;
 			-moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 			-webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -4113,7 +4112,7 @@
 			text-align: center;
 			position: relative;
 			z-index: 1;
-			margin-top: 2rem;
+			margin-top: 10rem;
 			opacity: 1;
 		}
 
