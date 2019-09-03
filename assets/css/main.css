@@ -3439,7 +3439,7 @@
 		}
 
 			#wrapper > .main.accent2 input, #wrapper > .main.accent2 select, #wrapper > .main.accent2 textarea {
-				color: #ffffff;
+				color: #000 !important;
 			}
 
 			#wrapper > .main.accent2 a {
@@ -3577,7 +3577,7 @@
 			}
 
 			#wrapper > .main.accent2 ::-webkit-input-placeholder {
-				color: #ffffff !important;
+				color: #999 !important;
 			}
 
 			#wrapper > .main.accent2 :-moz-placeholder {
