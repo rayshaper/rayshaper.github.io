@@ -15,6 +15,18 @@
 		  gtag('js', new Date());
 
 		  gtag('config', 'UA-123983990-1');
+		  function clickShowImg(src)
+		  {
+		  	console.log(src)
+		  	document.getElementById("hover-img").src = "images/news" + src +".jpg";
+		  	document.getElementById("hover").style.display = "block";
+		  	// document.getElementById('check1').click()
+		  }
+		  function clickHideImg()
+		  {
+		  	document.getElementById("hover").style.display = "none";
+		  	// document.getElementById('check1').click()
+		  }
 		</script>
 
 		<title>RayShaper</title>
@@ -23,7 +35,9 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
-
+		<div id="hover" onclick="clickHideImg()">
+			<img id="hover-img" class="news-img" src="" alt="" />
+		</div>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -187,8 +201,10 @@
 						<header>
 							<h2>NEWS</h2>
 							<p><a href="https://www.rts.ch/play/tv/emission/t-t-c--toutes-taxes-comprises?id=14235">A recent RTS program about Crans Montana, mentions RayShaper.</a></p>
+							<p><a onclick="clickShowImg('01')">RAYSHAPER SA NEC PLUS ULTRA DE LA CAMÉRA</a></p>
+							<p><a onclick="clickShowImg('02')">Après les stars de cinéma, Crans-Montana drague les start-up</a></p>
 						</header>
-						<div class="inner">
+<!-- 						<div class="inner">
 							<div class="row 200%">
 								<div class="4u 12u$(medium)">
 									<img class="news-img" src="images/news01.jpg" alt="" />
@@ -201,7 +217,7 @@
 								</div>
 							
 							</div>
-						</div>
+						</div> -->
 					</section>
 
 				<!-- Section -->
@@ -227,7 +243,6 @@
 							</form>
 						</div>
 					</section>
-
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
