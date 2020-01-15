@@ -10,6 +10,29 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123983990-1"></script>
 		<script>
+		  var url = window.location.hostname
+		  var temp = url.split('.').indexOf('com')
+		  var content_ch = '<div class="contactImfo">\
+		  					<span>Contact: Erica Han</span>\
+                          <span>E-mail: info@rayshaper.com</span>\
+                          <span>Los Angeles, CA USA</span>\
+						</div>\
+						<p></p>\
+						<p class="copyright">&copy; 2018 by RayShaper. All rights reserved.</p>'
+          var content_com = '<div class="contactImfo">\
+							<span>Contact: Touradj Ebrahimi</span>\
+						 	<span>E-mail: info@rayshaper.ch</span>\
+						 	<span>Tel: +41 79 331 9993</span>\
+						 	<span>rue Centrale 54, Crans-Montana, CH-3963, Switzerland</span>\
+						</div>\
+						<p></p>\
+						<p class="copyright">&copy; 2018 by RayShaper. All rights reserved.</p>'          
+		  if (temp !== -1) {
+		  	document.getElementById("contact-warp").innerHTML = content_com;
+		  } else {
+		  	document.getElementById("contact-warp").innerHTML = content_ch;
+		  }
+		  console.log('url', url)
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
@@ -249,14 +272,11 @@
 							<li><a href="mailto:pjunker@rayshaper.ch" class="icon alt fa-envelope-o"><span class="label">Email</span></a></li>
 
 						</ul>
-						<div class="contactImfo">
-						 <span>Contact: Touradj Ebrahimi</span>
-						 <span>E-mail: info@rayshaper.ch</span>
-						 <span>Tel: +41 79 331 9993</span>
-						 <span>rue Centrale 54, Crans-Montana, CH-3963, Switzerland</span>
+						<div id="contact-warp"></div>
+<!-- 						<div class="contactImfo">
 						</div>
 						<p></p>
-						<p class="copyright">&copy; 2018 by RayShaper. All rights reserved.</p>
+						<p class="copyright">&copy; 2018 by RayShaper. All rights reserved.</p> -->
 					</footer>
 
 			</div>
