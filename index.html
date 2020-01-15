@@ -11,7 +11,7 @@
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123983990-1"></script>
 		<script>
 		  var url = window.location.hostname
-		  // var temp = url.split('.').indexOf('com')
+		  var temp = url.split('.').indexOf('com')
 		  // var content_ch = '<div class="contactImfo">\
 		  // 					<span>Contact: Erica Han</span>\
     //                       <span>E-mail: info@rayshaper.com</span>\
@@ -32,7 +32,7 @@
 		  // } else {
 		  // 	document.getElementById("contact-warp").innerHTML = content_ch;
 		  // }
-		  console.log('url', url)
+		  console.log('url', url, temp)
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
