@@ -1,0 +1,38 @@
+.header-contant {
+	background-color: #fff;
+	position: fixed;
+	height: 52px;
+	z-index: 99;
+	width: 100%;
+	line-height: 52px;
+	top: 0;
+}
+
+.header-contant img {
+	width: 100px;
+	margin-left: 20px;
+}
+
+.wrapper-contant {
+	padding-top: 52px;
+}
+
+.main-contant {
+	padding: 40px;
+	font-size: 30px;
+}
+.main-word {
+	font-weight: bold;
+}
+.img-contant {
+	padding-top: 20px;
+	width: 100%;
+}
+.img-contant img {
+	width: 100%;
+}
+.footer-contant {
+	padding: 20px 0px 40px 0px;
+	color: #999;
+	text-align: center;
+}
